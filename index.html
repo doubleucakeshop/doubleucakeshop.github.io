@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>doubleucakeshop</title>
+
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- header section start here  -->
+    <header class="header">
+      <div class="logoContent">
+        <a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
+        <h1 class="logoName">doubleucakeshop</h1>
+        <div class="logoContent1">
+          <h1 class="logoName2">Made by Order</h1>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#product">product</a>
+        <a href="#blogs">blogs</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icon">
+        <i class="" id="search"></i>
+        <i class="fas fa-bars" id="menu-bar"></i>
+      </div>
+
+      <div class="icon">
+        <i class="fas fa-volume-up" id="music"></i>
+      </div>
+      <audio id="song" src="music/pinkvenom-blackpink.mp3" type="audio/mp3"></audio>
+      <script>
+        var music = document.getElementById("music");
+        var song = document.getElementById("song");
+
+        music.onclick = function () {
+          if (song.paused) {
+            song.play();
+          } else {
+            song.pause();
+          }
+        };
+      </script>
+
+      <div class="search">
+        <form action="product" method="get" class="search"></form>
+        <input type="search" placeholder="search..." />
+      </div>
+    </header>
+    <!-- header section end here  -->
+
+    <!-- home section start here  -->
+    <section class="home" id="home">
+      <div class="homeContent">
+        <h2>Korean Style Cake</h2>
+        <p>Love is like a good cake, you never know when it’s coming, but you’d better eat it when it does</p>
+        <p>Celebrate your special day with us</p>
+        <p>Open 10:00 AM</p>
+        <div class="home-btn">
+          <a href="#product"><button>see more</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- home section end here  -->
+
+    <!-- product section start here  -->
+    <section class="product" id="product">
+      <div class="heading">
+        <h2>Our Products</h2>
+      </div>
+      <div class="swiper product-row">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/cake8.jpg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Tall Cake</h3>
+              <p>Butterfly Cake, 20cm</p>
+              <div class="orderNow">
+                <a href="https://wa.me/6283100546769"><button>Order Now</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/cake7.jpg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Tall Cake</h3>
+              <p>Butterfly Cake, 15cm</p>
+              <div class="orderNow">
+                <a href="https://wa.me/6283100546769"><button>Order Now</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/cake4.jpg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Tall Cake</h3>
+              <p>New life starts soon!!</p>
+              <div class="orderNow">
+                <a href="https://wa.me/6283100546769"><button>Order Now</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/cake5.jpg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Tall Cake</h3>
+              <p>New life starts soon!!</p>
+              <div class="orderNow">
+                <a href="https://wa.me/6283100546769"><button>Order Now</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper product-row">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/cake6.jpg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Whole Cake</h3>
+              <p>Luxury Glam, Full Edibel Gold, 15cm</p>
+              <div class="orderNow">
+                <a href="https://wa.me/6283100546769"><button>Order Now</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/cake1.jpg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Two Tier Cake</h3>
+              <p>Vintage, Vanilla Cake, 18cm & 11cm</p>
+              <div class="orderNow">
+                <a href="https://wa.me/6283100546769"><button>Order Now</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/cake2.jpg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Two Tier Cake</h3>
+              <p>Two Tier, Custome Design</p>
+              <div class="orderNow">
+                <a href="https://wa.me/6283100546769"><button>Order Now</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/cake3.jpg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Whole Cake</h3>
+              <p>Black, Chocolate Cake, 15cm</p>
+              <div class="orderNow">
+                <a href="https://wa.me/6283100546769"><button>Order Now</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- product section end here  -->
+
+    <!-- blogs section start here  -->
+    <section class="blogs" id="blogs">
+      <div class="swiper blogs-row">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/blog-img1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Butterfly Whole Cake</h3>
+              <p>Whole Cake, Butterfly Design, 15cm</p>
+              <p>If you’re trying to create a company, it’s like baking a cake. You have to have all the ingredients in the right proportion.</p>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/blog-img2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Abstrak design</h3>
+              <p>Tall Cake, Abstrak design, 15cm</p>
+              <p>A bad review is like baking a cake with all the best ingredients and having someone sit on it.</p>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/blog-img3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Custome Design</h3>
+              <p>Tall Cake, Mix Topper Toys & Fondant, 18cm</p>
+              <p>You know you’re getting old when the candles cost more than the cake.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- blogs section ends here  -->
+
+    <!-- newsletter section start here  -->
+
+    <section class="newsletter">
+      <form action="">
+        <h3>CELEBRATE</h3>
+        <h3>YOUR SPECIAL DAY WITH US</h3>
+      </form>
+    </section>
+    <!-- newsletter section ends here  -->
+
+    <!-- footer section start here  -->
+
+    <footer class="footer" id="contact">
+      <div class="box-container">
+        <div class="mainBox">
+          <div class="content">
+            <a href="#" class="logo"><img src="images/logo.jpg" width="50" alt="" /></a>
+            <h1 class="logoName">doubleucakeshop</h1>
+          </div>
+
+          <p>Find us on instagram</p>
+          <p>Thank you for trusting us</p>
+        </div>
+        <div class="box">
+          <h3>Address</h3>
+          <a href="https://maps.app.goo.gl/AHMw4nm8KUzEXsW96"> <i class="fas fa-map"></i>Purwakarta</a>
+        </div>
+        <div class="box">
+          <h3>Contact Info</h3>
+          <a href="https://wa.me/6283100546769"> <i class="fas fa-phone"></i>0831-0054-6769</a>
+          <a href="https://accounts.google.com/login?hl=id"> <i class="fas fa-envelope"></i>doubleucakeshop@gmail.com</a>
+        </div>
+      </div>
+      <div class="share">
+        <a href="https://wa.me/6283100546769" class="fab fa-whatsapp"></a>
+        <a href="https://www.instagram.com/doubleucakeshop/?hl=id" class="fab fa-instagram"></a>
+        <a href="https://www.pinterest.com/Doubleu_cake/" class="fab fa-pinterest"></a>
+      </div>
+      <div class="credit">created by <a href="https://www.instagram.com/resqyfanaa/" class="text-white fw-bold">ResqyFana</a></div>
+    </footer>
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js file  -->
+    <script src="index.js"></script>
+  </body>
+</html>
